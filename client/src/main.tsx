@@ -1,0 +1,14 @@
+import { StrictMode } from 'react'
+import { AdminProvider } from './contexts/AdminContext'
+import './i18n'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.tsx'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <AdminProvider>
+      <App />
+    </AdminProvider>
+  </StrictMode>,
+)
